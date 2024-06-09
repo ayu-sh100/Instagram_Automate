@@ -1,5 +1,6 @@
 from instabot import Bot
-b=Bot()
+
+b = Bot()
 # here in the login function we need to give username and password 
 # of the instagram account which we would be using
 b.login(username="*****",password="*****")
@@ -19,11 +20,11 @@ b.unfollow("*****")
 b.send_message("*****",["*****"])
 # here in the get user followers function we need to give the username
 # of the logged in account to get the details of the followers  
-followers=b.get_user_followers("*****")
+followers = b.get_user_followers("*****")
 for f in followers:
     print(b.get_user_info(f))
 # here in the get user followings function we need to give the username
 # of the logged in account to get the details of the followings  
-following=b.get_user_following("*****")
+following = b.get_user_following("*****")
 for f in following:
     print(b.get_user_info(f))
